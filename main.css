@@ -1,14 +1,74 @@
 /*@@@@@@@@@@@@@@@ COLORS @@@@@@@@@@@@@@@*/
 
 :root {
-    --primary-default: #072ac8;
-    --accent: #43D2FF;
-    --primary-hover: #292E47;
-    --primary-tapped: #D1EDFF;
-    --neutral-dark: #292E47;
-    --neutral-medium: #6B708D;
-    --neutral-light: #F4F6FC;
-    --neutral-light-blue: #ECF7FF;
-    --secondary-1: #FFC600;
-    --secondary-2: #FCE300;
+    --color-primary-default: #072ac8;
+    --color-accent: #43D2FF;
+    --color-primary-hover: #292E47;
+    --color-primary-tapped: #D1EDFF;
+    --color-neutral-dark: #292E47;
+    --color-neutral-medium: #6B708D;
+    --color-neutral-light: #F4F6FC;
+    --color-neutral-light-blue: #ECF7FF;
+    --color-secondary-1: #FFC600;
+    --color-secondary-2: #FCE300;
+}
+
+/*@@@@@@@@@@@@@@@ TEXT STYLES @@@@@@@@@@@@@@@*/
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    /* line-height: auto; */
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    /* line-height: auto; */
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    /* line-height: auto; */
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    /* line-height: auto; */
+}
+
+.text-body-intro-medium {
+    font-size: 24px;
+    font-weight: medium;
+}
+
+.text-body-intro-regular {
+    font-size: 20px;
+    font-weight: regular;
+}
+
+.text-headline-regular {
+    font-size: 17px;
+    font-weight: regular;
+}
+
+.text-headline-medium {
+    font-size: 17px;
+    font-weight: medium;
+}
+
+.text-caption-1-regular {
+    font-size: 15px;
+    font-weight: regular;
+}
+
+.text-caption-2-regular {
+    font-size: 13px;
+    font-weight: regular;
 }
