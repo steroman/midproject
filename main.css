@@ -1,0 +1,14 @@
+/*@@@@@@@@@@@@@@@ COLORS @@@@@@@@@@@@@@@*/
+
+:root {
+    --primary-default: #072ac8;
+    --accent: #43D2FF;
+    --primary-hover: #292E47;
+    --primary-tapped: #D1EDFF;
+    --neutral-dark: #292E47;
+    --neutral-medium: #6B708D;
+    --neutral-light: #F4F6FC;
+    --neutral-light-blue: #ECF7FF;
+    --secondary-1: #FFC600;
+    --secondary-2: #FCE300;
+}
