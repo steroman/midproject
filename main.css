@@ -79,7 +79,7 @@ h4 {
 }
 
 body {
-    max-width: 1440px;
+    width: 1100px;
     margin: 0 auto;
     background-color: var(--color-neutral-light);
 }
@@ -94,23 +94,31 @@ header {
 .button {
     background-color: var(--color-primary-default);
     color: #FFFFFF;
-    width: 150px;
+    /* width: 150px; */
     padding: 15px 36px;
     font-size: 17px;
+    height: 52px
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 52px;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    max-height: 52px;
 }
 
 nav ul {
-    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 1em;
+    flex-direction: row;
+    justify-content: space-around;
+    /* Check how to do priority so that this one takes the most space */
+}
+
+nav ul li {
     list-style-type: none;
 }
