@@ -11,13 +11,12 @@
     --color-neutral-light-blue: #ECF7FF;
     --color-secondary-1: #FFC600;
     --color-secondary-2: #FCE300;
+
 }
+
+
 
 /*@@@@@@@@@@@@@@@ TEXT STYLES @@@@@@@@@@@@@@@*/
-
-* {
-    font-family: Roboto, sans-serif;
-}
 
 h1 {
     font-size: 60px;
@@ -71,4 +70,47 @@ h4 {
 .text-caption-2-regular {
     font-size: 13px;
     font-weight: regular;
+}
+
+/*@@@@@@@@@@@@@@@ ELEMENTS @@@@@@@@@@@@@@@*/
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--color-neutral-light);
+}
+
+header {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button {
+    background-color: var(--color-primary-default);
+    color: #FFFFFF;
+    width: 150px;
+    padding: 15px 36px;
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1em;
+    list-style-type: none;
 }
