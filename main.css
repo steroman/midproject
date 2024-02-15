@@ -18,58 +18,58 @@
 
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     color: var(--color-neutral-dark);
     /* line-height: auto; */
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
     /* line-height: auto; */
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     /* line-height: auto; */
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     /* line-height: auto; */
 }
 
 .text-body-intro-medium {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .text-body-intro-regular {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
 .text-headline-regular {
-    font-size: 17px;
+    font-size: 1.062rem;
     font-weight: 400;
 }
 
 .text-headline-medium {
-    font-size: 17px;
+    font-size: 1.062rem;
     font-weight: 500;
 }
 
 .text-caption-1-regular {
-    font-size: 15px;
+    font-size: 0.937rem;
     font-weight: 400;
 }
 
 .text-caption-2-regular {
-    font-size: 13px;
+    font-size: 0.812rem;
     font-weight: 400;
 }
 
@@ -208,10 +208,10 @@ section {
     width: auto;
     justify-content: space-around;
     filter: grayscale(1);
-    margin-top: 130px;
+    margin-top: 8rem;
 }
 
 h3 {
     color: var(--color-neutral-dark);
-    font-size: 40px;
+    font-size: 2.5rem;
 }
