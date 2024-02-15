@@ -11,64 +11,123 @@
     --color-neutral-light-blue: #ECF7FF;
     --color-secondary-1: #FFC600;
     --color-secondary-2: #FCE300;
+
 }
+
+
 
 /*@@@@@@@@@@@@@@@ TEXT STYLES @@@@@@@@@@@@@@@*/
 
-* {
-    font-family: Roboto, sans-serif;
-}
-
 h1 {
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 700;
     /* line-height: auto; */
 }
 
 h2 {
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     /* line-height: auto; */
 }
 
 h3 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     /* line-height: auto; */
 }
 
 h4 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     /* line-height: auto; */
 }
 
 .text-body-intro-medium {
     font-size: 24px;
-    font-weight: medium;
+    font-weight: 500;
 }
 
 .text-body-intro-regular {
     font-size: 20px;
-    font-weight: regular;
+    font-weight: 400;
 }
 
 .text-headline-regular {
     font-size: 17px;
-    font-weight: regular;
+    font-weight: 400;
 }
 
 .text-headline-medium {
     font-size: 17px;
-    font-weight: medium;
+    font-weight: 500;
 }
 
 .text-caption-1-regular {
     font-size: 15px;
-    font-weight: regular;
+    font-weight: 400;
 }
 
 .text-caption-2-regular {
     font-size: 13px;
-    font-weight: regular;
+    font-weight: 400;
+}
+
+/*@@@@@@@@@@@@@@@ ELEMENTS @@@@@@@@@@@@@@@*/
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: var(--color-neutral-light);
+}
+
+header {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button {
+    background-color: var(--color-primary-default);
+    color: #FFFFFF;
+    /* width: 150px; */
+    padding: 15px 36px;
+    font-size: 17px;
+    width: auto;
+    border: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 52px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    max-height: 52px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+    list-style-type: none;
+    /* Check how to do priority so that this one takes the most space */
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--color-neutral-medium)
 }
