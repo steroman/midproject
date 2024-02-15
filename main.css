@@ -199,3 +199,7 @@ section {
     flex: 0 1 auto;
     align-self: flex-end;
     }
+
+.drop-shadow {
+    filter: drop-shadow(0 46.57px 93.14px rgba(0, 0, 0, 0.1));
+}
