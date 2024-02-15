@@ -161,12 +161,12 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
     width: 50%;
-    /* height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center; */
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-start;
 }
 
 #hero-content {
@@ -183,3 +183,15 @@ a {
     align-items: center;
     gap: 24px;
 }
+
+#hero-image img:nth-child(1) {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    }
+
+#hero-image img:nth-child(2) {
+    order: 2;
+    flex: 0 1 auto;
+    align-self: flex-end;
+    }
