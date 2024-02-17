@@ -406,3 +406,51 @@ nav ul {
     font-weight: 400;
     color: var(--color-neutral-dark);
 }
+
+/*@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@*/
+
+footer {
+    padding: 0 6.875rem;
+    margin-top: 12.5rem;
+    height: 15.125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+#company-info img {
+    height: 1.875rem;
+}
+
+#company-info p {
+    width: 16.25rem;
+    margin-top: 1.875rem;
+}
+
+#footer-links {
+    /* width: 27rem; */
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6.625rem;
+}
+
+#footer-links a {
+    font-size: 1.062rem;
+    font-weight: 400;
+    color: var(--color-neutral-medium);
+}
+
+.footer-link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+    justify-content: space-between;
+}
