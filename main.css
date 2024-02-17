@@ -346,7 +346,6 @@ nav ul {
 #services {
     padding: 0 6.875rem;
     margin-top: 12.5rem;
-    margin-bottom: 12.5rem;
 }
 
 .icon {
@@ -354,4 +353,56 @@ nav ul {
     clip-path: circle(49.6% at 50% 50%);
     background-color: var(--color-neutral-light-blue);
     margin-bottom: 1.875rem;
+}
+
+/*@@@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@@@*/
+
+#newsletter {
+    margin-top: 12.5rem;
+    text-align: center;
+    background-color: var(--color-secondary-1);
+    margin-bottom: 12.5rem;
+    height: 31.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newsletter-content {
+    padding: 0 6.875rem;
+}
+
+#newsletter-content p {
+    color: var(--color-neutral-dark);
+    margin-top: 1.25rem;
+}
+
+#email-input {
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.125rem;
+}
+
+#email-input button {
+    font-size: 1.062rem;
+    font-weight: 500;
+    height: 5rem;
+    width: 12.375rem;
+}
+
+#newsletter-content input {
+    background: url(assets/newsletter/icon/mail.svg) no-repeat scroll center left 1.875rem;
+    background-color: #FFFFFF;
+    padding-left: 4.375rem;
+    border: 0;
+    height: 100%;
+    width: 24.75rem;
+    margin-right: 1.25rem;
+}
+
+#newsletter-content input::placeholder {
+    font-size: 1.062rem;
+    font-weight: 400;
+    color: var(--color-neutral-dark);
 }
