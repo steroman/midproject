@@ -88,6 +88,10 @@ a {
     filter: drop-shadow(0 3rem 6rem rgba(0, 0, 0, 0.1));
 }
 
+.box-shadow {
+    box-shadow: 0 38.78px 77.55px rgba(0, 0, 0, 0.1);
+}
+
 /*@@@@@@@@@@@@@@@ TEXT STYLES @@@@@@@@@@@@@@@*/
 
 .text-intro-medium {
@@ -238,7 +242,6 @@ nav ul {
     background-color: #FFFFFF;
     /* margin: 1.25rem; */
     overflow: hidden;
-
 }
 
 .project-card img {
@@ -343,4 +346,12 @@ nav ul {
 #services {
     padding: 0 6.875rem;
     margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
+}
+
+.icon {
+    padding: 1.25rem;
+    clip-path: circle(49.6% at 50% 50%);
+    background-color: var(--color-neutral-light-blue);
+    margin-bottom: 1.875rem;
 }
