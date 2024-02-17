@@ -49,6 +49,7 @@ h2 {
 h3 {
     font-size: 2.5rem;
     font-weight: 700;
+    color: var(--color-neutral-dark);
     /* line-height: auto; */
 }
 
@@ -69,6 +70,7 @@ a {
     display: inline-block;
 }
 
+
 .button-primary {
     background-color: var(--color-primary-default);
     color: #FFFFFF;
@@ -84,6 +86,10 @@ a {
 
 .drop-shadow {
     filter: drop-shadow(0 3rem 6rem rgba(0, 0, 0, 0.1));
+}
+
+.box-shadow {
+    box-shadow: 0 38.78px 77.55px rgba(0, 0, 0, 0.1);
 }
 
 /*@@@@@@@@@@@@@@@ TEXT STYLES @@@@@@@@@@@@@@@*/
@@ -195,13 +201,13 @@ nav ul {
     order: 1;
     flex: 0 1 auto;
     align-self: flex-start;
-    }
+}
 
 #hero-image img:nth-child(2) {
     order: 2;
     flex: 0 1 auto;
     align-self: flex-end;
-    }
+}
 
 /*@@@@@@@@@@@@@@@ CLIENTS SECTION @@@@@@@@@@@@@@@*/
 
@@ -222,11 +228,6 @@ nav ul {
     margin-top: 12.5rem;
 }
 
-#projects h3 {
-    color: var(--color-neutral-dark);
-    font-size: 2.5rem;
-}
-
 #project-list {
     display: flex;
     flex-direction: row;
@@ -241,7 +242,6 @@ nav ul {
     background-color: #FFFFFF;
     /* margin: 1.25rem; */
     overflow: hidden;
-
 }
 
 .project-card img {
@@ -305,6 +305,10 @@ nav ul {
     text-align: center;
 }
 
+#testimonial-content h3 {
+    color: var(--color-neutral-light);
+}
+
 #testimonial-content #quote {
     color: var(--color-secondary-1);
 }
@@ -328,11 +332,26 @@ nav ul {
 }
 
 #testimonial-profile-full-name {
- color: var(--color-primary-hover);
+    color: var(--color-primary-hover);
 }
 
 #testimonial-profile-company {
     color: var(--color-neutral-light);
     font-size: 0.812rem;
     font-weight: 400;
+}
+
+/*@@@@@@@@@@@@@@@ SERVICES @@@@@@@@@@@@@@@*/
+
+#services {
+    padding: 0 6.875rem;
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
+}
+
+.icon {
+    padding: 1.25rem;
+    clip-path: circle(49.6% at 50% 50%);
+    background-color: var(--color-neutral-light-blue);
+    margin-bottom: 1.875rem;
 }
