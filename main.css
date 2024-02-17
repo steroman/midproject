@@ -195,13 +195,13 @@ nav ul {
     order: 1;
     flex: 0 1 auto;
     align-self: flex-start;
-    }
+}
 
 #hero-image img:nth-child(2) {
     order: 2;
     flex: 0 1 auto;
     align-self: flex-end;
-    }
+}
 
 /*@@@@@@@@@@@@@@@ CLIENTS SECTION @@@@@@@@@@@@@@@*/
 
@@ -328,7 +328,7 @@ nav ul {
 }
 
 #testimonial-profile-full-name {
- color: var(--color-primary-hover);
+    color: var(--color-primary-hover);
 }
 
 #testimonial-profile-company {
