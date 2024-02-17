@@ -14,7 +14,23 @@
 
 }
 
-/*@@@@@@@@@@@@@@@ TEXT STYLES @@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@ GENERAL @@@@@@@@@@@@@@@*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    width: 68.75rem;
+    margin: 0 auto;
+    background-color: var(--color-neutral-light);
+    color: var(--color-neutral-medium);
+    /* Thanks Adrià */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 h1 {
     font-size: 3.75rem;
@@ -42,12 +58,42 @@ h4 {
     /* line-height: auto; */
 }
 
-.text-body-intro-medium {
+p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-primary {
+    background-color: var(--color-primary-default);
+    color: #FFFFFF;
+    /* width: 150px; */
+    padding: 0.937rem 2.25rem;
+    font-size: 1.062rem;
+    height: auto;
+    min-width: 9.375rem;
+    border: none;
+    font-size: 1.062rem;
+    font-weight: 500;
+}
+
+.drop-shadow {
+    filter: drop-shadow(0 3rem 6rem rgba(0, 0, 0, 0.1));
+}
+
+/*@@@@@@@@@@@@@@@ TEXT STYLES @@@@@@@@@@@@@@@*/
+
+.text-intro-medium {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.text-body-intro-regular {
+.text-intro-regular {
     font-size: 1.25rem;
     font-weight: 400;
 }
@@ -72,21 +118,7 @@ h4 {
     font-weight: 400;
 }
 
-/*@@@@@@@@@@@@@@@ ELEMENTS @@@@@@@@@@@@@@@*/
-
-* {
-    font-family: Roboto, sans-serif;
-}
-
-body {
-    width: 68.75rem;
-    margin: 0 auto;
-    background-color: var(--color-neutral-light);
-    color: var(--color-neutral-medium);
-    /* Thanks Adrià */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+/*@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@*/
 
 header {
     width: auto;
@@ -94,25 +126,7 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 4.375rem;
-}
-
-.button-primary {
-    background-color: var(--color-primary-default);
-    color: #FFFFFF;
-    /* width: 150px; */
-    padding: 0.937rem 2.25rem;
-    font-size: 1.062rem;
-    height: auto;
-    min-width: 9.375rem;
-    border: none;
-    font-size: 1.062rem;
-    font-weight: 500;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    margin-top: 4.375rem;
+    align-items: center;
 }
 
 nav {
@@ -132,28 +146,17 @@ nav ul {
     /* Check how to do priority so that this one takes the most space */
 }
 
-p {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-a {
-    text-decoration: none;
-}
-
 .nav-link {
     color: var(--color-neutral-medium)
 }
 
-section {
-    margin-top: 6.25rem;
-}
+/*@@@@@@@@@@@@@@@ HERO SECTION @@@@@@@@@@@@@@@*/
 
 #hero {
     height: 40.625rem;
     display: flex;
     flex-direction: row;
+    margin-top: 6.25rem;
 }
 
 #hero-image {
@@ -198,9 +201,7 @@ section {
     align-self: flex-end;
     }
 
-.drop-shadow {
-    filter: drop-shadow(0 3rem 6rem rgba(0, 0, 0, 0.1));
-}
+/*@@@@@@@@@@@@@@@ CLIENTS SECTION @@@@@@@@@@@@@@@*/
 
 #clients {
     display: flex;
@@ -211,19 +212,56 @@ section {
     margin-top: 8rem;
 }
 
-h3 {
+/*@@@@@@@@@@@@@@@ PROJECTS SECTION @@@@@@@@@@@@@@@*/
+
+#projects h3 {
     color: var(--color-neutral-dark);
     font-size: 2.5rem;
 }
 
 #projects {
+    margin-top: 12.5rem;
+}
+
+#project-list {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 3.75rem;
+    gap: 2.5rem;
 }
 
 .project-card {
     width: 33%;
-    background-color: var(--color-neutral-light)
+    background-color: #FFFFFF;
+    /* margin: 1.25rem; */
+    overflow: hidden;
+
 }
 
+.project-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.card-content {
+    background-color: #FFFFFF;
+    padding: 1.875rem;
+}
+
+.card-content h4 {
+    color: var(--color-neutral-dark);
+}
+
+.card-content p {
+    font-size: 1.062rem;
+    font-weight: 400;
+    margin-top: 0.625rem;
+    margin-bottom: 3.437rem;
+}
+
+.card-content a {
+    color: var(--color-primary-default);
+}
