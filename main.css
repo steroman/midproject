@@ -49,6 +49,7 @@ h2 {
 h3 {
     font-size: 2.5rem;
     font-weight: 700;
+    color: var(--color-neutral-dark);
     /* line-height: auto; */
 }
 
@@ -68,6 +69,7 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+
 
 .button-primary {
     background-color: var(--color-primary-default);
@@ -222,11 +224,6 @@ nav ul {
     margin-top: 12.5rem;
 }
 
-#projects h3 {
-    color: var(--color-neutral-dark);
-    font-size: 2.5rem;
-}
-
 #project-list {
     display: flex;
     flex-direction: row;
@@ -305,6 +302,10 @@ nav ul {
     text-align: center;
 }
 
+#testimonial-content h3 {
+    color: var(--color-neutral-light);
+}
+
 #testimonial-content #quote {
     color: var(--color-secondary-1);
 }
@@ -335,4 +336,11 @@ nav ul {
     color: var(--color-neutral-light);
     font-size: 0.812rem;
     font-weight: 400;
+}
+
+/*@@@@@@@@@@@@@@@ SERVICES @@@@@@@@@@@@@@@*/
+
+#services {
+    padding: 0 6.875rem;
+    margin-top: 12.5rem;
 }
