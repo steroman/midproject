@@ -3,7 +3,7 @@
 :root {
     --color-primary-default: #072ac8;
     --color-accent: #43D2FF;
-    --color-primary-hover: #292E47;
+    --color-primary-hover: #A2D6F9;
     --color-primary-tapped: #D1EDFF;
     --color-neutral-dark: #292E47;
     --color-neutral-medium: #6B708D;
@@ -23,7 +23,7 @@
 }
 
 body {
-    width: 68.75rem;
+    width: 82.5rem;
     margin: 0 auto;
     background-color: var(--color-neutral-light);
     color: var(--color-neutral-medium);
@@ -121,7 +121,8 @@ a {
 /*@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@*/
 
 header {
-    width: auto;
+    /* width: auto; */
+    padding: 0 6.875rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -153,6 +154,7 @@ nav ul {
 /*@@@@@@@@@@@@@@@ HERO SECTION @@@@@@@@@@@@@@@*/
 
 #hero {
+    padding: 0 6.875rem;
     height: 40.625rem;
     display: flex;
     flex-direction: row;
@@ -204,6 +206,7 @@ nav ul {
 /*@@@@@@@@@@@@@@@ CLIENTS SECTION @@@@@@@@@@@@@@@*/
 
 #clients {
+    padding: 0 6.875rem;
     display: flex;
     flex-direction: row;
     width: auto;
@@ -214,13 +217,14 @@ nav ul {
 
 /*@@@@@@@@@@@@@@@ PROJECTS SECTION @@@@@@@@@@@@@@@*/
 
+#projects {
+    padding: 0 6.875rem;
+    margin-top: 12.5rem;
+}
+
 #projects h3 {
     color: var(--color-neutral-dark);
     font-size: 2.5rem;
-}
-
-#projects {
-    margin-top: 12.5rem;
 }
 
 #project-list {
@@ -264,4 +268,71 @@ nav ul {
 
 .card-content a {
     color: var(--color-primary-default);
+}
+
+/*@@@@@@@@@@@@@@@ TESTIMONIAL @@@@@@@@@@@@@@@*/
+
+#testimonial {
+    margin-top: 12.5rem;
+    background-image: url(assets/testimonial-section/orbit.png);
+    background-color: var(--color-neutral-dark);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 38.875rem;
+    justify-content: space-around;
+}
+
+.emojis {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.emojis img {
+    width: 9.375rem;
+}
+
+#testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 57%;
+    text-align: center;
+}
+
+#testimonial-content #quote {
+    color: var(--color-secondary-1);
+}
+
+#testimonial-profile {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 3.125rem;
+}
+
+#testimonial-profile img {
+    height: 100%;
+    clip-path: circle(44% at 50% 50%);
+}
+
+#testimonial-profile-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+#testimonial-profile-full-name {
+ color: var(--color-primary-hover);
+}
+
+#testimonial-profile-company {
+    color: var(--color-neutral-light);
+    font-size: 0.812rem;
+    font-weight: 400;
 }
