@@ -38,6 +38,7 @@ h1 {
     color: var(--color-neutral-dark);
     line-height: auto;
     margin: 0 auto;
+    margin-top: 6rem;
 }
 
 h2 {
@@ -77,7 +78,6 @@ a {
     /* width: 150px; */
     padding: 0.937rem 2.25rem;
     font-size: 1.062rem;
-    height: auto;
     min-width: 9.375rem;
     border: none;
     font-size: 1.062rem;
@@ -90,6 +90,10 @@ a {
 
 .box-shadow {
     box-shadow: 0 38.78px 77.55px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none
 }
 
 /*@@@@@@@@@@@@@@@ TEXT STYLES @@@@@@@@@@@@@@@*/
@@ -383,6 +387,10 @@ nav ul {
     flex-direction: row;
     margin-top: 3.125rem;
 }
+
+/* label[for="newsletter-email"] {
+    display: none
+} */
 
 #email-input button {
     font-size: 1.062rem;
