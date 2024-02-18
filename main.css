@@ -38,6 +38,7 @@ h1 {
     color: var(--color-neutral-dark);
     line-height: auto;
     margin: 0 auto;
+    margin-top: 6rem;
 }
 
 h2 {
@@ -382,6 +383,10 @@ nav ul {
     display: flex;
     flex-direction: row;
     margin-top: 3.125rem;
+}
+
+label[for="email"] {
+    display: none
 }
 
 #email-input button {
