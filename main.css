@@ -385,7 +385,7 @@ nav ul {
     margin-top: 3.125rem;
 }
 
-label[for="email"] {
+label[for="newsletter-email"] {
     display: none
 }
 
