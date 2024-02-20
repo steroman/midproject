@@ -23,7 +23,7 @@
     </header>
     <section id="form-section">
         <h1>Contact Us</h1>
-        <form id="form-input">
+        <form id="form-input" onsubmit="return validateName()" method="post">
             <div class="field full-width-field">
             <label for="full-name">Full Name *</label>
             <input placeholder="Enter your full name" type="text" class="one-line-input" name="full-name" id="full-name"></input>
