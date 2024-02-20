@@ -1,6 +1,7 @@
-// const email = document.getElementById("email");
+// function validateIronhack() {}
+// const name = document.getElementById("full-name");
 
-// email.addEventListener("input", (event) => {
+// name.addEventListener("ironhack", (event) => {
 //   if (email.validity.typeMismatch) {
 //     email.setCustomValidity("I am expecting an email address!");
 //   } else {
