@@ -9,20 +9,29 @@
 // });
 
 // function validateFields() {
-//   validateName();
-//   validateEmail()
+//   validateRequired();
+// //   validateEmail()
 // }
 
-function validateName() {
+function validateFields() {
+  const name = document.getElementById('full-name').value;
+  const parentDiv = document.querySelector('#full-name-container');
 
- const name = document.getElementById('full-name').value;
-
- if (name == "") {
-  email.setCustomValidity("Holi")
- } return false;
-
+  if (name === "") {
+    if (parentDiv.querySelector('.error-message') === null) { // Check if an error message is already displayed
+      const paragraph = document.createElement('p');
+      paragraph.classList.add('error-message'); // Add a CSS class to style the error message
+      const errorMessage = document.createTextNode('This field is required');
+      paragraph.appendChild(errorMessage);
+      parentDiv.appendChild(paragraph);
+    }
+    return false; // Prevent form submission if the name field is empty
+  } else {
+    // Remove any existing error message
+    const existingErrorMessage = parentDiv.querySelector('.error-message');
+    if (existingErrorMessage !== null) {
+      parentDiv.removeChild(existingErrorMessage);
+    }
+    return true; // Allow form submission if the name field is not empty
+  }
 }
- 
-//  console.log(email);
-
-// }
