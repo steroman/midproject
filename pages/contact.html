@@ -6,7 +6,7 @@
     <title>Circle - Contact Us</title>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
-<link rel="stylesheet" href="../styles/form.css">
+<link rel="stylesheet" href="../styles/contact.css">
 <link rel="stylesheet" href="../main.css">
 </head>
 <body>
@@ -23,26 +23,26 @@
     </header>
     <section id="form-section">
         <h1>Contact Us</h1>
-        <form id="form-input">
-            <div class="field full-width-field">
+        <form id="form-input" method="post">
+            <div class="field full-width-field" id="full-name-container">
             <label for="full-name">Full Name *</label>
-            <input placeholder="Enter your full name" type="text" class="one-line-input" name="full-name"></input>
+            <input placeholder="Enter your full name" type="text" class="one-line-input" name="full-name" id="full-name"></input>
         </div>
         <div class="half-width-fields">
         <div class="field">
             <label for="email">Email</label>
-            <input placeholder="Enter your email address" type="email" class="one-line-input" name="email"></input>
+            <input placeholder="Enter your email address" type="email" class="one-line-input" name="email" id="email"></input>
         </div>
         <div class="field">
             <label for="phone">Phone</label>
-            <input placeholder="Enter your phone number" type="tel" class="one-line-input" name="phone"></input>
+            <input placeholder="Enter your phone number" type="tel" class="one-line-input" name="phone" id="phone"></input>
         </div>
         </div>
         <div class="field full-width-field">
             <label for="message">Message</label>
-            <textarea placeholder="Write your message here…" name="message" rows="15"></textarea>
+            <textarea placeholder="Write your message here…" name="message" id="message" rows="15"></textarea>
         </div>
-        <button class="full-width-field button-primary one-line-input input-background">Submit</button>
+        <button class="full-width-field button-primary one-line-input input-background" id="submit-button">Submit</button>
         </form>
     </section>
     <footer>
@@ -55,5 +55,6 @@
             <div class="footer-link-column"><a href="">Projects</a><a href="">Privacy Policy</a></div>
         </section>
     </footer>
+    <script src="../javascript/form-validation.js"></script>
 </body>
 </html>
