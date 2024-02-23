@@ -84,6 +84,11 @@ a {
     font-weight: 500;
 }
 
+.button-primary:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-neutral-dark);
+}
+
 .drop-shadow {
     filter: drop-shadow(0 3rem 6rem rgba(0, 0, 0, 0.1));
 }
