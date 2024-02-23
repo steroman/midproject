@@ -1,5 +1,3 @@
-
-
 function validateIronhack() {
 const string = document.getElementById('full-name').value;
 if (string === "ironhack" || string === "Ironhack") {
