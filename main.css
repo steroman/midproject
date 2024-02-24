@@ -175,23 +175,8 @@ nav ul {
     margin-top: 6.25rem;
 }
 
-#hero-image {
-    background-image: url('assets/hero-section/hero-image.png');
-    height: 100%;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: flex-end;
-    align-items: flex-start;
-}
-
 #hero-content {
-    width: 52%;
+    width: 50%;
     /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -211,7 +196,23 @@ nav ul {
 
 }
 
-#hero-image img:nth-child(1) {
+#hero-image {
+    height: 100%;
+    width: 50%;
+    /* 
+    background-image: url('assets/hero-section/hero-image.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-start; */
+}
+
+/* #hero-image img:nth-child(1) {
     order: 1;
     flex: 0 1 auto;
     align-self: flex-start;
@@ -221,7 +222,7 @@ nav ul {
     order: 2;
     flex: 0 1 auto;
     align-self: flex-end;
-}
+} */
 
 /*@@@@@@@@@@@@@@@ CLIENTS SECTION @@@@@@@@@@@@@@@*/
 
@@ -362,6 +363,10 @@ nav ul {
     margin-top: 12.5rem;
 }
 
+.service-card .card-content h4 {
+    min-height: 4rem;
+}
+
 .icon {
     padding: 1.25rem;
     clip-path: circle(49.6% at 50% 50%);
@@ -409,7 +414,7 @@ nav ul {
     width: 12.375rem;
 }
 
-#newsletter-content input {
+#email-input input {
     background: url(assets/newsletter/icon/mail.svg) no-repeat scroll center left 1.875rem;
     background-color: #FFFFFF;
     padding-left: 4.375rem;
@@ -419,7 +424,7 @@ nav ul {
     margin-right: 1.25rem;
 }
 
-#newsletter-content input::placeholder {
+#email-input input::placeholder {
     font-size: 1.062rem;
     font-weight: 400;
     color: var(--color-neutral-dark);
@@ -471,4 +476,205 @@ footer {
     flex-direction: column;
     gap: 3.75rem;
     justify-content: space-between;
+}
+
+/*@@@@@@@@@@@@@@@ RESPONSIVE 468px @@@@@@@@@@@@@@@*/
+
+@media (max-width: 468px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 0;
+        margin: 0;
+        height: 100px;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background-color: var(--color-neutral-light);
+    }
+
+    header nav,
+    header button {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100%;
+        margin-top: 5rem;
+        padding: 0;
+        align-items: center;
+    }
+
+    #hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    #hero-content h1 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #hero-content p {
+        text-align: center;
+    }
+
+    #hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #hero-image img {
+        width: 90%;
+    }
+
+    #clients {
+        width: 100vw;
+        overflow-x: auto;
+        gap: 1.25rem;
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    #projects {
+        text-align: center;
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    #project-list {
+        gap: 1rem;
+        overflow-x: auto;
+    }
+
+    .project-card {
+        min-width: 18.75rem;
+        text-align: left;
+    }
+
+    #testimonial {
+        margin-top: 5rem;
+        height: 30rem;
+    }
+
+    .emojis {
+        height: 100%;
+    }
+
+    .emojis img {
+        width: 5rem;
+    }
+
+    #testimonial-content {
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    #services {
+        text-align: center;
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .service-card {
+        min-width: 18.75rem;
+        text-align: left;
+    }
+
+    #newsletter {
+        margin-top: 6rem;
+        margin-bottom: 0;
+    }
+
+    #newsletter-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #email-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        height: auto;
+    }
+
+    #email-input input {
+        height: 5rem;
+        margin: 0;
+        background-image: url(assets/newsletter/icon/mail.svg);
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position: 1.375rem;
+        border: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    #email-input input::placeholder {
+        padding: 4rem;
+    }
+
+    #email-input button {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 6rem;
+        height: auto;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    #footer-links {
+        display: none;
+    }
+
+    #company-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #company-info p {
+        width: 100%;
+        font-size: 1rem;
+    }
 }
