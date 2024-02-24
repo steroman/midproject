@@ -73,3 +73,24 @@ textarea::placeholder {
 .error-message::before {
     content: "⚠️ ";
 }
+
+/*@@@@@@@@@@@@@@@ RESPONSIVE 468px @@@@@@@@@@@@@@@*/
+
+@media (max-width: 468px) {
+
+    #form-section {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input::placeholder {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    textarea::placeholder {
+        font-size: 0.8rem;
+    }
+}
