@@ -41,7 +41,7 @@ function genContent(
     <img src="${projectImage}" id="background-img">
     <img src="${projectImage}" id="foreground-img">
     </div>
-    <div id="project-body">${projectContent}
+    <div id="project-body"><p>${projectContent}</p>
     </div>`;
   // console.log(content)
   return content;

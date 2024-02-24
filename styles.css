@@ -257,6 +257,7 @@ nav ul {
     background-color: #FFFFFF;
     /* margin: 1.25rem; */
     overflow: hidden;
+    filter: drop-shadow(0 3rem 6rem rgba(0, 0, 0, 0.1));
 }
 
 .project-card img {
@@ -361,6 +362,10 @@ nav ul {
 #services {
     padding: 0 6.875rem;
     margin-top: 12.5rem;
+}
+
+.service-card {
+    filter: drop-shadow(0 3rem 6rem rgba(0, 0, 0, 0.1));
 }
 
 .service-card .card-content h4 {
@@ -584,6 +589,7 @@ footer {
     .project-card {
         min-width: 18.75rem;
         text-align: left;
+        filter: none;
     }
 
     #testimonial {
@@ -613,6 +619,7 @@ footer {
     .service-card {
         min-width: 18.75rem;
         text-align: left;
+        filter: none;
     }
 
     #newsletter {

@@ -77,3 +77,47 @@
     opacity: 0.6;
     filter: blur(24px);
 }
+
+/*@@@@@@@@@@@@@@@ RESPONSIVE 468px @@@@@@@@@@@@@@@*/
+
+@media (max-width: 468px) {
+
+    #project-details {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #project-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #project-details img {
+        height: 8rem;
+        margin-top: 2rem;
+        object-fit: cover;
+    }
+
+    #background-img {
+        display: none;
+    }
+
+    #project-body {
+        margin-top: 2rem;
+        margin-bottom: 0;
+
+    }
+
+    #projects {
+        margin-top: 2rem;
+        line-break: normal;
+    }
+
+    p {
+        text-wrap: balance;
+    }
+}
