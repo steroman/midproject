@@ -37,8 +37,11 @@ function genContent(
         <p id="project-category">${projectCategory}</p>
         <p id="completion-date">Completed on <span id="date">${projectDate}</span></p>
     </div>
-    <img src="${projectImage}">
-    <div id="project-body">${projectContent}
+    <div class="blurred">
+    <img src="${projectImage}" id="background-img">
+    <img src="${projectImage}" id="foreground-img">
+    </div>
+    <div id="project-body"><p>${projectContent}</p>
     </div>`;
   // console.log(content)
   return content;
