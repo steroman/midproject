@@ -639,6 +639,7 @@ footer {
         align-items: center;
         gap: 1rem;
         height: auto;
+        padding: 1rem;
     }
 
     #email-input input {
