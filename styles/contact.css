@@ -1,0 +1,96 @@
+:root {
+    --new-color-neutral-medium: 107, 111, 141;
+}
+
+#form-section {
+    padding: 0 6.875rem;
+    margin-top: 8.75rem;
+}
+
+#form-section h1 {
+    margin-bottom: 5rem;
+}
+
+input,
+textarea {
+    background-color: rgba(var(--new-color-neutral-medium), 0.1);
+    border: 0;
+}
+
+input::placeholder {
+    font-size: 1.062rem;
+    font-weight: 400;
+    padding-left: 1.25rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.one-line-input {
+    height: 4.375rem;
+}
+
+.full-width-field {
+    width: 100%;
+}
+
+.half-width-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.half-width-fields div {
+    flex: 1;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 1.062rem;
+    font-weight: 400;
+    padding-left: 1.25rem;
+    padding-top: 1.375rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.937rem;
+    font-weight: 400;
+}
+
+.error-message::before {
+    content: "⚠️ ";
+}
+
+/*@@@@@@@@@@@@@@@ RESPONSIVE 468px @@@@@@@@@@@@@@@*/
+
+@media (max-width: 468px) {
+
+    #form-section {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input::placeholder {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    textarea::placeholder {
+        font-size: 0.8rem;
+    }
+}
