@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-primary {
+    min-width: 10rem;
+}
+
+@media (max-width: 468px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        max-width: 80%;
+        text-wrap: balance;
+    }
+}
