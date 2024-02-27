@@ -135,7 +135,8 @@ a {
 /*@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@*/
 
 header {
-    /* width: auto; */
+    max-width: 100%;
+    min-width: 52rem;
     padding: 0 6.875rem;
     display: flex;
     flex-direction: row;
@@ -224,6 +225,9 @@ nav ul {
     align-self: flex-end;
 } */
 
+#hero-image img {
+    min-width: 50%;
+}
 /*@@@@@@@@@@@@@@@ CLIENTS SECTION @@@@@@@@@@@@@@@*/
 
 #clients {

@@ -21,7 +21,7 @@ function validateName() {
     displayErrorMessage(parentDiv, 'Add your name');
     return false;
   } else if (namePattern.test(nameInput)) {
-    displayErrorMessage(parentDiv, 'I am Ironhack!');
+    displayErrorMessage(parentDiv, 'You can't be Ironhack, I am Ironhack!');
     return false;
   } else {
     return true;
