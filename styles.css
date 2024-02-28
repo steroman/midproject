@@ -559,9 +559,16 @@ footer {
     #clients {
         width: 100vw;
         overflow-x: auto;
+        overflow-y: hidden;
+        white-space: wrap;
+        scroll-behavior: smooth;
         gap: 1.25rem;
         padding: 0;
         margin-top: 3rem;
+    }
+    
+    #project-list::-webkit-scrollbar {
+        display: none
     }
 
     #projects {
