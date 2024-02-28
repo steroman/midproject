@@ -532,7 +532,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 96%;
         gap: 1rem;
     }
 
@@ -549,6 +549,7 @@ footer {
         width: 100%;
         display: flex;
         justify-content: center;
+        flex-direction: row;
     }
 
     #hero-image img {
@@ -687,7 +688,7 @@ footer {
         position: fixed;
         top: 0;
         width: calc(100vw - 13.75rem);
-        height: 100px;
+        height: 5rem;
         background-color: var(--color-neutral-light);
         z-index: 100;
     }
@@ -728,7 +729,7 @@ footer {
     header {
         padding: 0;
         margin: 0;
-        height: 100px;
+        height: 5rem;
         width: 100vw;
         position: fixed;
         top: 0;
@@ -748,11 +749,6 @@ footer {
         flex-direction: column;
         overflow: hidden;
         gap: 3rem;
-        margin-top: 5rem;
-    }
-
-    h1 {
-        font-size: 12vw;
     }
 
     h3 {
@@ -766,6 +762,7 @@ footer {
         width: 100%;
         padding: 0;
         align-items: center;
+        margin-top: 5rem;
     }
 
     #hero-content {
