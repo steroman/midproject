@@ -135,14 +135,19 @@ a {
 /*@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@*/
 
 header {
-    max-width: 100%;
-    min-width: 52rem;
     padding: 0 6.875rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 4.375rem;
+    padding-top: 4.375rem;
     align-items: center;
+    position: fixed;
+    top: 0;
+    max-width: 68.75rem;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-neutral-light);
+    z-index: 100;
 }
 
 nav {
@@ -173,15 +178,11 @@ nav ul {
     height: 40.625rem;
     display: flex;
     flex-direction: row;
-    margin-top: 6.25rem;
+    margin-top: 12.5rem;
 }
 
 #hero-content {
     width: 50%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -217,8 +218,11 @@ nav ul {
     flex-direction: row;
     width: auto;
     justify-content: space-between;
-    filter: grayscale(1);
     margin-top: 8rem;
+}
+
+#clients img {
+    filter: grayscale(1);
 }
 
 /*@@@@@@@@@@@@@@@ PROJECTS SECTION @@@@@@@@@@@@@@@*/
@@ -554,17 +558,6 @@ footer {
 
     #hero-image img {
         max-width: 90%;
-    }
-
-    #clients {
-        width: 100vw;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: wrap;
-        scroll-behavior: smooth;
-        gap: 1.25rem;
-        padding: 0;
-        margin-top: 3rem;
     }
 
     #project-list::-webkit-scrollbar {
@@ -931,4 +924,23 @@ footer {
         margin-top: 3.75rem;
         gap: 2.5rem;
     }
+}
+
+@media (max-width: 640px) {
+
+    #clients {
+        width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: wrap;
+        scroll-behavior: smooth;
+        gap: 1.25rem;
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    #clients::-webkit-scrollbar {
+        display: none
+    }
+
 }
