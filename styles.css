@@ -44,20 +44,17 @@ h1 {
 h2 {
     font-size: 3.125rem;
     font-weight: 700;
-    /* line-height: auto; */
 }
 
 h3 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--color-neutral-dark);
-    /* line-height: auto; */
 }
 
 h4 {
     font-size: 1.5rem;
     font-weight: 700;
-    /* line-height: auto; */
 }
 
 p {
@@ -74,7 +71,6 @@ a {
 .button-primary {
     background-color: var(--color-primary-default);
     color: #FFFFFF;
-    /* width: 150px; */
     padding: 0.937rem 2.25rem;
     font-size: 1.062rem;
     min-width: 9.375rem;
@@ -164,7 +160,6 @@ nav ul {
     justify-content: space-around;
     gap: 3.75rem;
     list-style-type: none;
-    /* Check how to do priority so that this one takes the most space */
 }
 
 .nav-link {
@@ -244,7 +239,6 @@ nav ul {
 .project-card {
     width: calc(33.33% - 2rem);
     background-color: #FFFFFF;
-    /* margin: 1.25rem; */
     overflow: hidden;
     filter: drop-shadow(0 3rem 6rem rgba(0, 0, 0, 0.1));
 }
@@ -401,10 +395,6 @@ nav ul {
     margin-top: 3.125rem;
 }
 
-/* label[for="newsletter-email"] {
-    display: none
-} */
-
 #email-input button {
     font-size: 1.062rem;
     font-weight: 500;
@@ -457,7 +447,6 @@ footer {
 }
 
 #footer-links {
-    /* width: 27rem; */
     display: inline-flex;
     flex-wrap: wrap;
     gap: 6.625rem;
