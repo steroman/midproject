@@ -673,8 +673,31 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    header {
+        padding: 0 6.875rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 4.375rem;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: calc(100vw - 13.75rem);
+        height: 100px;
+        background-color: var(--color-neutral-light);
+        z-index: 100;
+    }
+    
     #hero h1 {
         font-size: 4vw;
+    }
+
+    #testimonial {
+        margin: 12.5rem 6.875rem 0 6.875rem;
+    }
+
+    #newsletter {
+        margin: 12.5rem 6.875rem 0 6.875rem;
     }
 }
 
