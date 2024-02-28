@@ -1,5 +1,9 @@
 /*@@@@@@@@@@@@@@@ PROJECT DETAILS @@@@@@@@@@@@@@@*/
 
+main {
+    margin-top: 12rem;
+}
+
 #project-details {
     padding: 0 6.875rem;
     margin-top: 8.75rem;
@@ -97,9 +101,10 @@
     }
 
     #project-details img {
-        height: 8rem;
+        /* height: 8rem;
         margin-top: 2rem;
-        object-fit: cover;
+        object-fit: cover; */
+        display: none;
     }
 
     #background-img {
@@ -119,5 +124,31 @@
 
     p {
         text-wrap: balance;
+    }
+}
+
+@media only screen and (min-width: 469px) and (max-width: 1023px) {
+    main {
+        margin-top: 0.5rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #project-details img {
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    #project-body {
+        margin-top: 2rem;
     }
 }

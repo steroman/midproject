@@ -502,6 +502,7 @@ footer {
         flex-direction: column;
         overflow: hidden;
         gap: 3rem;
+        margin-top: 1rem;
     }
 
     h1 {
@@ -744,6 +745,7 @@ footer {
         flex-direction: column;
         overflow: hidden;
         gap: 3rem;
+        margin-top: 5rem;
     }
 
     h1 {
@@ -759,7 +761,6 @@ footer {
         flex-direction: column-reverse;
         height: auto;
         width: 100%;
-        margin-top: 5rem;
         padding: 0;
         align-items: center;
     }
