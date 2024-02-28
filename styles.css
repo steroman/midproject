@@ -575,7 +575,11 @@ footer {
         overflow-x: auto;
         overflow-y: hidden;
         white-space: wrap;
+        scroll-behavior: smooth;
+    }
 
+    #project-list::-webkit-scrollbar {
+        display: none
     }
 
     .project-card {
