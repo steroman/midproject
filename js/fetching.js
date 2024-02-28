@@ -64,20 +64,6 @@ async function appendContent() {
 
 appendContent();
 
-// SAME FUNCTION BUT ASYNC
-
-// async function asyncCall() {
-//     try {
-//         const res = await fetch("https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects");
-//         const data = await res.json();
-//         console.log(data)
-//     } catch (error) {
-
-//     }
-// }
-
-// asyncCall();
-
 function projectLoad() {
   const searchParams = new URLSearchParams(window.location.search);
   const urlId = searchParams.get("id");
