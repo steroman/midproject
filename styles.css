@@ -692,7 +692,7 @@ footer {
         background-color: var(--color-neutral-light);
         z-index: 100;
     }
-    
+
     #hero h1 {
         font-size: 4vw;
     }
@@ -867,7 +867,7 @@ footer {
         width: calc(33.33% - 2rem);
         min-height: 8rem;
     }
-        
+
     #project-list {
         gap: 1rem;
         overflow-x: auto;
