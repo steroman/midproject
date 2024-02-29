@@ -1,3 +1,5 @@
+/* FUNCTION TO REDIRECT TO CONTACT PAGE WHEN USERS CLICK ON CONTACT BUTTON */
+
 const getInTouchbutton = document.querySelectorAll(".contact-button");
 
 getInTouchbutton.forEach((button) => {
