@@ -38,7 +38,6 @@ h1 {
     color: var(--color-neutral-dark);
     line-height: auto;
     margin: 0 auto;
-    margin-top: 6rem;
 }
 
 h2 {
@@ -90,7 +89,7 @@ a {
 }
 
 .box-shadow {
-    box-shadow: 0 38.78px 77.55px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
@@ -142,24 +141,8 @@ header {
     width: 100%;
     background-color: var(--color-neutral-light);
     padding-top: 1rem;
-    /* padding: 0;
-    height: 6.25rem;
-    position: fixed;
-    top: 0;
     z-index: 100;
-    background-color: var(--color-neutral-light);
-    padding-top: 4.375rem;
-    align-items: center;
-    max-width: 68.75rem; */
 }
-
-/* nav {
-    display: flex;
-    flex-direction: row;
-    max-height: 3.25rem;
-    flex-grow: 1;
-    justify-content: center;
-} */
 
 .navbar {
     display: flex;
@@ -167,9 +150,9 @@ header {
     justify-content: space-between;
     flex-grow: 1;
     align-items: center;
-    max-width: 1320px;
+    max-width: 82.5rem;
     width: 100%;
-    padding: 0px 1rem;
+    padding: 0 1rem;
     box-sizing: border-box;
 }
 
@@ -192,9 +175,9 @@ nav ul {
 
 .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 1.5rem;
+    height: 0.18rem;
+    margin: 0.3rem auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: var(--color-primary-default);
@@ -518,28 +501,10 @@ footer {
         overflow-x: hidden;
     }
 
-    /* header {
-        padding: 0;
-        margin: 0;
-        height: 100px;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        background-color: var(--color-neutral-light);
-    } */
-
-    /* header nav,
-    header button {
-        display: none;
-    } */
-
     main {
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        overflow: auto;
         gap: 3rem;
         margin-top: 1rem;
     }
@@ -589,8 +554,6 @@ footer {
     #hero-image img {
         max-width: 90%;
     }
-
-
 
     #projects {
         text-align: center;
@@ -745,26 +708,6 @@ footer {
         padding: 1rem;
         overflow-x: hidden;
     }
-
-    /* header {
-        padding: 0 2rem;
-        display: flex;
-        margin: 0;
-        height: 5rem;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        background-color: var(--color-neutral-light);
-        box-sizing: border-box;
-    } */
-
-    /* header nav,
-    header button {
-        display: none;
-    } */
 
     main {
         display: flex;
@@ -977,17 +920,6 @@ footer {
 
 }
 
-/* @media (max-width: 812px) {
-    #project-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        margin-top: 3.75rem;
-        gap: 2.5rem;
-    }
-} */
-
 @media (max-width: 640px) {
 
     #clients {
@@ -1019,17 +951,17 @@ footer {
     }
 
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(0.5rem) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-0.5rem) rotate(-45deg);
     }
 
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 4.375rem;
         gap: 0;
         flex-direction: column;
         background-color: var(--color-neutral-light);
@@ -1056,10 +988,10 @@ footer {
     header {
         padding-top: 4.375rem;
         z-index: 100;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
 
     .navbar {
-        padding: 0px 6.735rem;
+        padding: 0 6.735rem;
     }
 }
