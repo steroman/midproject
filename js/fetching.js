@@ -47,8 +47,6 @@ function genContent(
   return content;
 }
 
-// genContent ("stefano", "dev", "hoy", "https://github.com/ironhack-jc/mid-term-api/blob/main/3.jpg?raw=true", "cuerpo");
-
 async function appendContent() {
   try {
     const { uuid, name, description, content, image, completed_on } =

@@ -18,7 +18,7 @@ function validateName() {
   clearErrorMessage(parentDiv);
 
   if (nameInput === "") {
-    displayErrorMessage(parentDiv, 'Add your name');
+    displayErrorMessage(parentDiv, "Add your name");
     return false;
   } else if (namePattern.test(nameInput)) {
     displayErrorMessage(parentDiv, `You can't be Ironhack, I am Ironhack!`);
@@ -36,10 +36,10 @@ function validateEmail() {
   clearErrorMessage(parentDiv);
 
   if (emailInput === "") {
-    displayErrorMessage(parentDiv, 'Add your email');
+    displayErrorMessage(parentDiv, "Add your email");
     return false;
   } else if (!emailPattern.test(emailInput)) {
-    displayErrorMessage(parentDiv, 'Add a valid email');
+    displayErrorMessage(parentDiv, "Add a valid email");
     return false;
   } else {
     return true;
@@ -52,14 +52,14 @@ function validatePhone() {
   const parentDiv = document.getElementById("phone").parentElement;
   clearErrorMessage(parentDiv);
   if (phoneInput === "") {
-    displayErrorMessage(parentDiv, 'Add your phone number');
+    displayErrorMessage(parentDiv, "Add your phone number");
     return false;
   } else if (!phonePattern.test(phoneInput)) {
-    displayErrorMessage(parentDiv, 'Add only digits');
+    displayErrorMessage(parentDiv, "Add only digits");
     return false;
   } else {
     return true;
-    }
+  }
 }
 
 function validateMessage() {
@@ -67,22 +67,22 @@ function validateMessage() {
   const parentDiv = document.getElementById("message").parentElement;
   clearErrorMessage(parentDiv);
   if (messageInput === "") {
-    displayErrorMessage(parentDiv, 'Add a message');
+    displayErrorMessage(parentDiv, "Add a message");
     return false;
   } else {
     return true;
-    }
+  }
 }
 
 function displayErrorMessage(parentDiv, message) {
-  const paragraph = document.createElement('p');
-  paragraph.classList.add('error-message');
+  const paragraph = document.createElement("p");
+  paragraph.classList.add("error-message");
   paragraph.appendChild(document.createTextNode(message));
   parentDiv.appendChild(paragraph);
 }
 
 function clearErrorMessage(parentDiv) {
-  const existingErrorMessage = parentDiv.querySelector('.error-message');
+  const existingErrorMessage = parentDiv.querySelector(".error-message");
   if (existingErrorMessage !== null) {
     parentDiv.removeChild(existingErrorMessage);
   }
