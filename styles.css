@@ -494,7 +494,7 @@ footer {
         width: 100vw;
         box-sizing: border-box;
         margin: 0;
-        padding: 1rem;
+        padding: 0;
         overflow-x: hidden;
     }
 
