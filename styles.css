@@ -511,7 +511,7 @@ footer {
     }
 
     h1 {
-        font-size: 12vw;
+        margin-top: 2rem;
     }
 
     h3 {
@@ -920,8 +920,6 @@ footer {
     }
 
 }
-
-
 
 @media (max-width: 1024px) {
 

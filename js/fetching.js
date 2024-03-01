@@ -1,20 +1,14 @@
-// A function to retrieve the project number from the URL query parameters
-function projectLoad() {
-  const searchParams = new URLSearchParams(window.location.search);
-  const urlId = searchParams.get("id");
-  return urlId;
-}
+// Retrieve the project number from the URL query parameters
+const projectNumber = projectLoad();
 
-// A function that returns a promise to retrieve project data from the API
-
+// Function to fetch project data from an API as a Promise
 function retrieveProject() {
   return new Promise((resolve, reject) => {
-    // Fetch project data from the API
     fetch(
       "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects"
     )
       .then((response) => {
-        return response.json(); // Parse the response as JSON
+        return response.json();
       })
       .then((data) => {
         // Filter the data based on the project number
@@ -28,7 +22,7 @@ function retrieveProject() {
   });
 }
 
-// A function to generate the project content based on the project data
+// Function to generate and configure the HTML content for the project
 function genContent(
   projectId,
   projectName,
@@ -37,7 +31,6 @@ function genContent(
   projectImage,
   projectDate
 ) {
-  // Create and configure the HTML content for the project
   const content = document.createElement("article");
   content.setAttribute("id", "project-details");
   content.innerHTML = `<h1>${projectName}</h1>
@@ -57,8 +50,7 @@ function genContent(
 async function appendContent() {
   try {
     // Retrieve project data using the 'retrieveProject' function
-    const { uuid, name, description, content, image, completed_on } =
-      await retrieveProject();
+    const { uuid, name, description, content, image, completed_on } = await retrieveProject();
     // Append the generated content to the DOM
     const container = document.getElementById("container");
     container.appendChild(
@@ -71,3 +63,10 @@ async function appendContent() {
 
 // Call the 'appendContent' function to initiate the process of fetching and appending project content
 appendContent();
+
+// Function to retrieve the project number from the URL query parameters
+function projectLoad() {
+  const searchParams = new URLSearchParams(window.location.search);
+  const urlId = searchParams.get("id");
+  return urlId;
+}
