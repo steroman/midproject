@@ -50,7 +50,8 @@ function genContent(
 async function appendContent() {
   try {
     // Retrieve project data using the 'retrieveProject' function
-    const { uuid, name, description, content, image, completed_on } = await retrieveProject();
+    const { uuid, name, description, content, image, completed_on } =
+      await retrieveProject();
     // Append the generated content to the DOM
     const container = document.getElementById("container");
     container.appendChild(
