@@ -992,3 +992,19 @@ footer {
         padding: 0 6.735rem;
     }
 }
+
+@media (max-width: 1023px) {
+    header {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--color-primary-default);
+    }
+
+    .nav-menu {
+        border-bottom: 2px solid var(--color-primary-default);
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+}
