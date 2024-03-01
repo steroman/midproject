@@ -280,6 +280,7 @@ nav ul {
     font-weight: 400;
     margin-top: 0.625rem;
     margin-bottom: 3.437rem;
+    min-height: 3rem;
 }
 
 .card-content a {
@@ -920,7 +921,9 @@ footer {
 
 }
 
-@media (max-width: 640px) {
+
+
+@media (max-width: 1024px) {
 
     #clients {
         width: 100vw;
