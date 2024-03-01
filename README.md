@@ -8,7 +8,7 @@ This repository contains the codebase for the Circle website and its associated 
 - [File Structure](#file-structure)
 - [Usage](#usage)
 - [See it live](#see-it-live)
-- [Main features](#main-features)  
+- [Main features](#main-features)
 - [Contributing](#contributing)
 - [License](#license)
 

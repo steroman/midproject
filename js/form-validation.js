@@ -34,7 +34,6 @@ function validateName() {
 
 /* FUNCTION TO VALIDATE WHETHER THE EMAIL IS EMPTY AND MATCHES A VALID EMAIL */
 
-
 function validateEmail() {
   const emailInput = document.getElementById("email").value.trim();
   const emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -86,7 +85,6 @@ function validateMessage() {
 }
 
 /* FUNCTION TO ADD AN EMPTY PARAGRAPH BELOW EACH FIELD TO FILL WITH THE ERROR MESSAGE */
-
 
 function displayErrorMessage(parentDiv, message) {
   const paragraph = document.createElement("p");
