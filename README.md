@@ -22,9 +22,8 @@ You can see this website live at https://ironhack-midproject-sr.netlify.app/. Th
 
 ### Main features
 
-- Responsive
-  - 1440px desktop
-  - <468px mobile
+- Responsive (Desktop, Tablet, Mobile)
+  - Animated mobile navigation
 - Dynamic content display for the 3 projects of index.html
   - Retrieved from [Ironhack's repo](https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects)
 - Client-side Javascript form validation
@@ -33,6 +32,7 @@ You can see this website live at https://ironhack-midproject-sr.netlify.app/. Th
   - Email address format
   - Phone number (Only digits)
 - Javascript browsing for header and home page buttons
+- Custom favicon
 
 ## File Structure
 
@@ -45,15 +45,18 @@ The project file structure is organized as follows:
 │   ├── form-validation.js (Provides client-side validation for the contact form)
 │   ├── utils.js (Utility functions for common operations)
 ├── pages (Contains additional HTML pages)
+│   ├── 404.html (Custom 404 page)
 │   ├── contact.html (Contact form page)
 │   ├── project.html (Skeleton page for project details, retrieved dynamically)
 ├── styles (Contains styles for additional HTML pages)
+│   ├── contact.css (Contains styles for 404.html)
 │   ├── contact.css (Contains styles for contact.html)
 │   ├── project.css (Contains styles for project.html)
 ├── .gitignore
 ├── index.html (Main HTML file for the Circle website's home page)
 ├── index.js (Handles interactions and functionality on the home page)
 ├── LICENSE (MIT license)
+├── netlify.toml (Contains Netlify configuration)
 ├── README.md
 └── styles.css (Contains global styles, including home page)
 ```
