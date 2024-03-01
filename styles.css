@@ -564,6 +564,7 @@ footer {
         overflow-y: hidden;
         white-space: wrap;
         scroll-behavior: smooth;
+        padding: 0 1.25rem;
     }
 
     #project-list::-webkit-scrollbar {
