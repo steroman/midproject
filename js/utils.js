@@ -58,4 +58,4 @@ function adjustScrollPosition() {
 }
 
 // Call the adjustScrollPosition function when the page is loaded
-window.addEventListener('load', adjustScrollPosition);
+window.addEventListener("load", adjustScrollPosition);
