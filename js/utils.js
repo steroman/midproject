@@ -27,16 +27,51 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 /* FUNCTION TO MAKE THE SECTION HEADINGS VISIBLE */
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    let target = document.querySelector(this.getAttribute("href"));
+//     let target = document.querySelector(this.getAttribute("href"));
+//     if (target) {
+//       window.scrollTo({
+//         top: target.offsetTop - 150, // ADJUST THE OFFSET OF THE SECTION
+//         behavior: "smooth",
+//       });
+//     }
+//   });
+// });
+
+
+// Function to make the section headings visible
+function adjustScrollPosition() {
+  let offset = 150; // Default offset value
+
+  // Check if the URL contains an anchor
+  if (window.location.hash) {
+    let target = document.querySelector(window.location.hash);
     if (target) {
+      offset = 150; // Adjust the offset for smooth scrolling
       window.scrollTo({
-        top: target.offsetTop - 150, // ADJUST THE OFFSET OF THE SECTION
+        top: target.offsetTop - offset,
         behavior: "smooth",
       });
     }
+  }
+
+  // Smooth scroll on anchor click
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      let target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - offset, // Apply the offset for smooth scrolling
+          behavior: "smooth",
+        });
+      }
+    });
   });
-});
+}
+
+// Call the adjustScrollPosition function when the page is loaded
+window.addEventListener('load', adjustScrollPosition);
