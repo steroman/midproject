@@ -83,7 +83,7 @@ textarea::placeholder {
 @media only screen and (max-width: 468px) {
 
     #form-section {
-        margin: 0;
+        margin: 1.25rem;
         padding: 0;
         display: flex;
         flex-direction: column;
