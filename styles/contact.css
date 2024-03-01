@@ -12,6 +12,7 @@ main {
 
 #form-section h1 {
     margin-bottom: 5rem;
+    text-align: center;
 }
 
 input,
@@ -30,6 +31,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    width: 95%;
 }
 
 .one-line-input {
