@@ -27,22 +27,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 /* FUNCTION TO MAKE THE SECTION HEADINGS VISIBLE */
 
-// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
-
-//     let target = document.querySelector(this.getAttribute("href"));
-//     if (target) {
-//       window.scrollTo({
-//         top: target.offsetTop - 150, // ADJUST THE OFFSET OF THE SECTION
-//         behavior: "smooth",
-//       });
-//     }
-//   });
-// });
-
-
-// Function to make the section headings visible
 function adjustScrollPosition() {
   let offset = 150; // Default offset value
 
